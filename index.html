@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title and Logo -->
+    <title>E-Commerce Application | SwiftCart</title>
+    <link rel="shortcut icon" href="./Assets/" type="image/x-icon">
+
+    <!-- Font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwindcss + daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="navbar bg-base-100 shadow-sm container mx-auto px-50">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-2xl text-sky-400">SwiftCart</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="product.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end text-xl">
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- Banner / Hero Section  Start-->
+    <section>
+        <div class="hero min-h-screen" style="background-image: url('./Assets/banner-image.png');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-left">
+                <div class="max-w-lg text-center">
+                    <h1 class="mb-5 text-5xl font-bold text-white">Best Collection For You</h1>
+                    <p class="mb-5">
+                        Discover the latest trends in fashion, electronics, and more. Shop with confidence and style at
+                        SwiftCart.
+                    </p>
+                    <a href="" class="btn btn-primary">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner / Hero Section  End-->
+
+    <!-- Features / Why Choose Us Start  -->
+    <Section class="bg-gray-100">
+        <div class="container mx-auto px-50 pt-24 text-center">
+            <h2 class="text-4xl font-bold">Why Choose Us</h2>
+            <p class="text-gray-600 text-wrap my-4">We provide the best shopping experience with top-notch services.</p>
+        </div>
+        <div class="grid md:grid-cols-4 sm:grid-cols-2 gap-4 container mx-auto px-50 pb-24 mt-18">
+            <div class="shadow-sm rounded-xl px-6 py-4 bg-white">
+                <div class="-mt-6">
+                    <span class="bg-green-100 p-2 shadow-xl rounded-md border-2 border-white -mt-8">
+                        <i class="fa-regular fa-truck text-blue-400"></i>
+                    </span>
+                </div>
+                <h4 class="text-base font-semibold mt-6 py-3">Fast Delivery</h4>
+                <p class="text-gray-600 text-wrap">Get your orders deliverd to your doorstep quickly and efficiently.
+                </p>
+            </div>
+            <div class="shadow-sm rounded-xl px-6 py-4 bg-white">
+                <div class="-mt-6">
+                    <span class="bg-green-100 p-2 shadow-xl rounded-md border-2 border-white -mt-8">
+                        <i class="fa-regular fa-headphones text-blue-400"></i>
+                    </span>
+                </div>
+                <h4 class="text-base font-semibold mt-6 py-3">24/7 Support</h4>
+                <p class="text-gray-600 text-wrap">Our support team is available around the clock to assist you.
+                </p>
+            </div>
+            <div class="shadow-sm rounded-xl px-6 py-4 bg-white">
+                <div class="-mt-6">
+                    <span class="bg-green-100 p-2 shadow-xl rounded-md border-2 border-white -mt-8">
+                        <i class="fa-solid fa-shield-halved text-blue-400"></i>
+                    </span>
+                </div>
+                <h4 class="text-base font-semibold mt-6 py-3">Secure Payment</h4>
+                <p class="text-gray-600 text-wrap">Experience safe and secure transactions with our encrypted payment
+                    systems.
+                </p>
+            </div>
+            <div class="shadow-sm rounded-xl px-6 py-4 bg-white">
+                <div class="-mt-6">
+                    <span class="bg-green-100 p-2 shadow-xl rounded-md border-2 border-white -mt-8">
+                        <i class="fa-solid fa-arrows-rotate text-blue-400"></i>
+                    </span>
+                </div>
+                <h4 class="text-base font-semibold mt-6 py-3">Easy Returns</h4>
+                <p class="text-gray-600 text-wrap">Not satisfied? Return your products easily within 30 days.
+                </p>
+            </div>
+
+        </div>
+    </Section>
+    <!-- Features / Why Choose Us End  -->
+
+    <!-- Trending / Top Rated Section Start  -->
+    <section>
+        <div class="container mx-auto px-50 pt-18 text-left">
+            <h2 class="text-4xl font-bold">Trending Now</h2>
+        </div>
+
+        <!-- Product Grid - Responsive: 1 card on mobile, 2 on tablet, 3 on desktop -->
+        <!-- grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 -->
+        <div class="container mx-auto px-50 pt-12 pb-24">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Item 1 -->
+                <div class="rounded-xl shadow-lg overflow-hidden bg-white">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100">
+                        <img src="./Assets/T-Shirt.jpg" alt="Product" class="w-full h-64 object-contain p-6">
+                    </div>
+                    <!-- Card Body -->
+                    <div class="p-5">
+                        <!-- Category & Rating -->
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+                                Men's Clothing
+                            </span>
+                            <span class="flex items-center text-yellow-500 text-sm font-medium">
+                                <i class="fa-solid fa-star mr-1"></i> 3.9 (120)
+                            </span>
+                        </div>
+                        <!-- Title -->
+                        <h4 class="text-md font-semibold mb-2 line-clamp-2">
+                            Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                        </h4>
+                        <!-- Price -->
+                        <p class="text-xl font-bold mb-4">$109.95</p>
+                        <!-- Buttons -->
+                        <div class="flex gap-3">
+                            <a href=""
+                                class="flex-1 border border-gray-300 rounded-lg py-2 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition text-sm">
+                                <i class="fa-regular fa-eye mr-2"></i> Details
+                            </a>
+                            <a href=""
+                                class="flex-1 bg-purple-600 text-white rounded-lg py-2 flex items-center justify-center hover:bg-purple-700 transition text-sm">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> Add
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Item 2 -->
+                <div class="rounded-xl shadow-lg overflow-hidden bg-white">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100">
+                        <img src="./Assets/T-Shirt.jpg" alt="Product" class="w-full h-64 object-contain p-6">
+                    </div>
+                    <!-- Card Body -->
+                    <div class="p-5">
+                        <!-- Category & Rating -->
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+                                Men's Clothing
+                            </span>
+                            <span class="flex items-center text-yellow-500 text-sm font-medium">
+                                <i class="fa-solid fa-star mr-1"></i> 3.9 (120)
+                            </span>
+                        </div>
+                        <!-- Title -->
+                        <h4 class="text-md font-semibold mb-2 line-clamp-2">
+                            Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                        </h4>
+                        <!-- Price -->
+                        <p class="text-xl font-bold mb-4">$109.95</p>
+                        <!-- Buttons -->
+                        <div class="flex gap-3">
+                            <a href=""
+                                class="flex-1 border border-gray-300 rounded-lg py-2 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition text-sm">
+                                <i class="fa-regular fa-eye mr-2"></i> Details
+                            </a>
+                            <a href=""
+                                class="flex-1 bg-purple-600 text-white rounded-lg py-2 flex items-center justify-center hover:bg-purple-700 transition text-sm">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> Add
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Item 3 -->
+                <div class="rounded-xl shadow-lg overflow-hidden bg-white">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100">
+                        <img src="./Assets/T-Shirt.jpg" alt="Product" class="w-full h-64 object-contain p-6">
+                    </div>
+                    <!-- Card Body -->
+                    <div class="p-5">
+                        <!-- Category & Rating -->
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+                                Men's Clothing
+                            </span>
+                            <span class="flex items-center text-yellow-500 text-sm font-medium">
+                                <i class="fa-solid fa-star mr-1"></i> 3.9 (120)
+                            </span>
+                        </div>
+                        <!-- Title -->
+                        <h4 class="text-md font-semibold mb-2 line-clamp-2">
+                            Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                        </h4>
+                        <!-- Price -->
+                        <p class="text-xl font-bold mb-4">$109.95</p>
+                        <!-- Buttons -->
+                        <div class="flex gap-3">
+                            <a href=""
+                                class="flex-1 border border-gray-300 rounded-lg py-2 flex items-center justify-center text-gray-700 hover:bg-gray-100 transition text-sm">
+                                <i class="fa-regular fa-eye mr-2"></i> Details
+                            </a>
+                            <a href=""
+                                class="flex-1 bg-purple-600 text-white rounded-lg py-2 flex items-center justify-center hover:bg-purple-700 transition text-sm">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> Add
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending / Top Rated Section End  -->
+
+    <!-- Newsletter & Footer Start  -->
+    <footer class="footer sm:footer-horizontal bg-black text-base-content px-50 p-18 text-white">
+        <div>
+            <h2 class="text-2xl font-bold text-sky-400">SwiftCart</h2>
+            <p>Your one-stop shop for all your fashion and lifestyle needs. Quality products, fast delivery, and
+                exellent support.</p>
+        </div>
+        <nav>
+            <h6 class="footer-title">QUICK LINKS</h6>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">Products</a>
+            <a class="link link-hover">About</a>
+            <a class="link link-hover">Contact</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">SUPPORT</h6>
+            <a class="link link-hover">FAQ</a>
+            <a class="link link-hover">Shipping</a>
+            <a class="link link-hover">Returns</a>
+            <a class="link link-hover">Privacy Policy</a>
+        </nav>
+        <form>
+            <h6 class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</h6>
+            <fieldset class="w-80">
+                <label class="w-md">The latest news, article, and resources, sent to your inbox weekly.</label>
+                <div class="join">
+                    <input type="text" placeholder="Enter your email" class="input input-bordered join-item" />
+                    <button class="btn btn-primary join-item">Subscribe</button>
+                </div>
+            </fieldset>
+        </form>
+        <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        </div> -->
+    </footer>
+    <!-- Newsletter & Footer End  -->
+</body>
+
+</html>
